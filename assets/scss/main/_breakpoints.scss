@@ -17,42 +17,42 @@ $breakpoints: (
 
 
 @mixin xxs {
-    @media screen and (min-width: map-get($breakpoints, xxs)){
+    @media screen and (max-width: (map-get($breakpoints, xs) - 1)){
         @content;
     }
 }
 
 
 @mixin xs {
-    @media screen and (min-width: map-get($breakpoints, xs)){
+    @media screen and (max-width: (map-get($breakpoints, sm) - 1)){
         @content;
     }
 }
 
 
 @mixin sm {
-    @media screen and (min-width: map-get($breakpoints, sm)){
+    @media screen and (max-width: (map-get($breakpoints, md) - 1)){
         @content;
     }
 }
 
 
 @mixin md {
-    @media screen and (min-width: map-get($breakpoints, md)){
+    @media screen and (max-width: (map-get($breakpoints, lg) - 1)){
         @content;
     }
 }
 
 
 @mixin lg {
-    @media screen and (min-width: map-get($breakpoints, lg)){
+    @media screen and (max-width: (map-get($breakpoints, xl) - 1)){
         @content;
     }
 }
 
 
 @mixin xl {
-    @media screen and (min-width: map-get($breakpoints, xl)){
+    @media screen and (max-width: (map-get($breakpoints, xxl) - 1)){
         @content;
     }
 }
