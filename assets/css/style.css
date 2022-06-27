@@ -1,1 +1,205 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* 
+
+Master Stylesheet
+----------------------
+
+Template Name : AppLab
+Description : 
+Author Name : Shaikh Abu Amer
+Author URL : 
+Version : 1.0
+
+
+Table of Content
+-----------------------
+
+1. Typography 
+2. Navigation 
+3.
+4.
+5.
+6.
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #fff;
+  color: #616368;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*-----------------------------------------------Typography-----------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #242f51;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 75px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 70px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #616368;
+  margin-bottom: 10px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+}
+
+a {
+  transition: all .4s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FE6282;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button:focus, button:hover {
+  outline: none;
+}
+
+a:hover, a:focus, a:visited {
+  outline: none;
+}
+
+.btn-custom {
+  display: inline-block;
+  background-color: #FE6282;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 43px;
+  height: 60px;
+  padding: 0px 40px;
+  border-radius: 40px;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+}
+
+.btn-custom:hover {
+  background-color: #fff;
+  border: 1px solid #242f51;
+}
+
+.section-heading h4 {
+  color: #ff3946;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  text-transform: capitalize;
+}
+
+/*  */
+@media screen and (min-width: 320px) {
+  header {
+    padding: 20px 0px;
+  }
+  header .btn-custom {
+    height: 40px;
+    line-height: 37px;
+    padding: 0px 15px;
+    border-radius: 5px;
+  }
+  header a {
+    display: inline-block;
+    margin-left: 15px;
+    color: #242f51;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  header .offcanvas.offcanvas-start {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  header .offcanvas.offcanvas-start {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header .offcanvas.offcanvas-start {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .offcanvas.offcanvas-start {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    padding: 40px 0px;
+  }
+  header a {
+    margin-left: 35px;
+  }
+  header .btn-custom {
+    height: 60px;
+    line-height: 57px;
+    padding: 0px 40px;
+    border-radius: 35px;
+  }
+  header .navbar-nav {
+    align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
