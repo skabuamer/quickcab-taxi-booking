@@ -1,1 +1,251 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* 
+
+Master Stylesheet
+----------------------
+
+Template Name : 
+Description : 
+Author Name : Shaikh Abu Amer
+Author URL : 
+Version : 1.0
+
+
+Table of Content
+-----------------------
+
+1. Typography 
+2. Navigation 
+3. 
+4.
+5.
+6.
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  background-color: #fff;
+  color: #adadad;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*-----------------------------------------------Typography-----------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 65px;
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #adadad;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------GLOBAL STYLES------------------------------ */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  outline: none;
+}
+
+.btn-custom {
+  background-image: linear-gradient(to right, #f5286e, #fc6d43);
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 50px;
+  height: 50px;
+  padding: 0px 50px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  position: relative;
+  transition: all 1s ease;
+  z-index: 1;
+}
+.btn-custom:hover::after {
+  opacity: 1;
+}
+.btn-custom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to left, #f5286e, #fc6d43);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.section-heading h4 {
+  color: #ff3946;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  text-transform: capitalize;
+}
+
+/* -------------------------------HEADER STYLES------------------------------ */
+header {
+  border-bottom: 2px solid #dcd8d8;
+}
+header .container-fluid {
+  padding: 20px 50px;
+}
+header .nav-item {
+  margin-right: 70px;
+}
+header .nav-item:last-child {
+  margin-right: 0px;
+}
+header .nav-item a {
+  color: #adadad;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  font-size: 16px;
+}
+header .nav-item a:hover {
+  color: #f5286e;
+}
+header .nav-item a:hover::after {
+  opacity: 1;
+}
+header .nav-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+  background: #f5286e;
+  width: 100%;
+  height: 3px;
+  border-radius: 50px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+header .sign-up-btn {
+  text-transform: capitalize;
+  color: #fc6d43;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0px 40px;
+  line-height: 50px;
+}
+
+/*------------------HERO SECTION STYLES-----------------*/
+#hero-section {
+  padding: 142px 0;
+  position: relative;
+}
+#hero-section .hero-content {
+  z-index: 2;
+  position: relative;
+}
+#hero-section .hero-content h1 {
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 36px;
+}
+#hero-section .hero-content p {
+  margin-bottom: 38px;
+}
+#hero-section .tns-outer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+  background: white;
+  z-index: 1;
+}
+#hero-section .tns-ovh {
+  overflow: visible;
+}/*# sourceMappingURL=style.css.map */

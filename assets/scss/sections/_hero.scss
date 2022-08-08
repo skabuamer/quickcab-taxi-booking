@@ -1,0 +1,39 @@
+/*------------------HERO SECTION STYLES-----------------*/
+
+#hero-section {
+    padding: 142px 0;
+    position: relative;
+    .hero-content {
+        // width: 50%;
+        z-index: 2;
+        position: relative;
+        h1 {
+            color: #000;
+            text-transform: capitalize;
+            margin-bottom: 36px;
+        }
+
+        p {
+            margin-bottom: 38px;
+        }
+    }
+
+    .hero-slider {
+        // margin-top: 130px;
+    }
+
+    .tns-outer::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0%;
+        width: 50%;
+        height: 100%;
+        background: white;
+        z-index: 1;
+    }
+
+    .tns-ovh {
+        overflow: visible;
+    }
+}

@@ -1,53 +1,79 @@
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+/* -------------------------------GLOBAL STYLES------------------------------ */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
     color: inherit;
 }
 
-a{
-    transition: all .4s ease;
+a {
+    transition: all 0.4s ease;
     text-decoration: none;
 }
 
 a:hover {
-    color: $color-2;
+    color: #fff;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-button:focus,button:hover {
+button:focus,
+button:hover {
     outline: none;
 }
 
-a:hover,a:focus,a:visited {
+a:hover,
+a:focus,
+a:visited {
     outline: none;
 }
 
 .btn-custom {
+    @include gradient-x;
     display: inline-block;
-    background-color: $color-2;
     color: #fff;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 43px;
-    height: 60px;
-    padding: 0px 40px;
-    border-radius: 40px;
+    font-size: 14px;
+    line-height: 50px;
+    height: 50px;
+    padding: 0px 50px;
+    border-radius: 6px;
     text-transform: capitalize;
-    border: 1px solid transparent;
-    
+    position: relative;
+    transition: all 1s ease;
+    z-index: 1;
+
     &:hover {
-        background-color: #fff;
-        border: 1px solid $main-color;
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include gradient-x-reverse;
+        border-radius: 5px;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.4s ease;
     }
 }
 
 .section-heading {
-    
 }
-.section-heading h4 { 
+.section-heading h4 {
     color: #ff3946;
     font-weight: 600;
     text-transform: uppercase;
