@@ -44,7 +44,10 @@ header {
 
     .sign-up-btn {
         text-transform: capitalize;
-        color: $color-2;
+        @include gradient-y;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 14px;
         font-weight: 600;
         padding: 0px 40px;

@@ -14,12 +14,18 @@
         }
 
         p {
+            width: 70%;
             margin-bottom: 38px;
         }
     }
 
     .hero-slider {
-        // margin-top: 130px;
+        margin-top: 130px;
+        // position: relative;
+
+        img {
+            width: 100%;
+        }
     }
 
     .tns-outer::before {
@@ -35,5 +41,18 @@
 
     .tns-ovh {
         overflow: visible;
+    }
+
+    .single-img {
+    }
+
+    .car-container {
+        position: relative;
+        .car-img {
+            position: absolute;
+            z-index: 2;
+            top: -180px;
+            left: -110px;
+        }
     }
 }

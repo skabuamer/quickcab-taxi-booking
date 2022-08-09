@@ -212,7 +212,10 @@ header .nav-item a::after {
 }
 header .sign-up-btn {
   text-transform: capitalize;
-  color: #fc6d43;
+  background-image: linear-gradient(#f5286e, #fc6d43);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 14px;
   font-weight: 600;
   padding: 0px 40px;
@@ -234,7 +237,14 @@ header .sign-up-btn {
   margin-bottom: 36px;
 }
 #hero-section .hero-content p {
+  width: 70%;
   margin-bottom: 38px;
+}
+#hero-section .hero-slider {
+  margin-top: 130px;
+}
+#hero-section .hero-slider img {
+  width: 100%;
 }
 #hero-section .tns-outer::before {
   content: "";
@@ -248,4 +258,155 @@ header .sign-up-btn {
 }
 #hero-section .tns-ovh {
   overflow: visible;
+}
+#hero-section .car-container {
+  position: relative;
+}
+#hero-section .car-container .car-img {
+  position: absolute;
+  z-index: 2;
+  top: -180px;
+  left: -110px;
+}
+
+#booking-section {
+  padding: 30px 0;
+}
+#booking-section .select-proccess {
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+#booking-section .select-proccess svg {
+  color: #000;
+}
+#booking-section .form-select {
+  border: 0px;
+}
+
+#app-section {
+  position: relative;
+  margin-top: 450px;
+}
+#app-section .app-bg {
+  width: 1200px;
+  position: absolute;
+  background-image: linear-gradient(to top, #f5286e, #fc6d43);
+  padding: 60px 0;
+  border-radius: 30px;
+  top: -217px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#app-section .app-content h2 {
+  color: #fff;
+  margin-bottom: 17px;
+}
+#app-section .app-content .app-subtitle {
+  margin-bottom: 30px;
+  color: #fff;
+  display: inline-block;
+}
+#app-section .app-content .download-btn img {
+  margin-right: 27px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2509803922);
+}
+#app-section .app-screenshot {
+  position: relative;
+}
+#app-section .app-screenshot img {
+  position: absolute;
+  top: -200px;
+  right: 10px;
+}
+
+footer {
+  background: #000;
+  padding-top: 270px;
+  padding-bottom: 70px;
+  clip-path: polygon(0 125px, 100% 0, 100% 100%, 0% 100%);
+  position: relative;
+}
+footer .footer-top {
+  margin-bottom: 90px;
+}
+footer .footer-widget h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 33px;
+  text-transform: capitalize;
+}
+footer .footer-widget li {
+  margin-bottom: 30px;
+}
+footer .footer-widget li a {
+  text-transform: capitalize;
+  color: #fff;
+}
+footer .subscribe {
+  display: flex;
+  position: relative;
+}
+footer .subscribe svg {
+  position: absolute;
+  color: #766e6e;
+  left: 15px;
+  font-size: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+footer .subscribe input {
+  width: 70%;
+  font-size: 16px;
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  padding-left: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+footer .subscribe .btn-custom {
+  width: 30%;
+  height: 60px;
+  padding: 0px 20px;
+  border: 0;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+footer .subscribe .btn-custom:hover::after {
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+footer .socials {
+  margin-top: 30px;
+}
+footer .socials svg {
+  margin-right: 30px;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 8px;
+  width: 20px;
+}
+footer .footer-bottom {
+  font-size: 16px;
+  line-height: 24px;
+}
+footer .footer-bottom .copyright {
+  color: #fff;
+}
+footer .footer-bottom .footer-nav li {
+  margin-right: 40px;
+}
+footer .footer-bottom .footer-nav li:last-child {
+  margin-right: 0;
+}
+footer .footer-bottom .footer-nav a {
+  color: #fff;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */

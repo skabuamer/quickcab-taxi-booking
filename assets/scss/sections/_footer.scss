@@ -1,0 +1,103 @@
+footer {
+    background: #000;
+    padding-top: 270px;
+    padding-bottom: 70px;
+    clip-path: polygon(0 125px, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+
+    .footer-top {
+        margin-bottom: 90px;
+    }
+    .footer-widget {
+        h3 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 33px;
+            text-transform: capitalize;
+        }
+
+        li {
+            margin-bottom: 30px;
+            a {
+                text-transform: capitalize;
+                color: #fff;
+            }
+        }
+    }
+    .subscribe {
+        display: flex;
+        position: relative;
+
+        svg {
+            position: absolute;
+            color: #766e6e;
+            left: 15px;
+            font-size: 25px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        input {
+            width: 70%;
+            font-size: 16px;
+            font-weight: 400;
+            border: 0;
+            outline: 0;
+            border-radius: 10px;
+            padding: 15px 20px;
+            padding-left: 50px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .btn-custom {
+            width: 30%;
+            height: 60px;
+            padding: 0px 20px;
+            border: 0;
+            border-radius: 10px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+            &:hover {
+                &::after {
+                    border-radius: 10px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+    }
+
+    .socials {
+        margin-top: 30px;
+        svg {
+            margin-right: 30px;
+            border: 2px solid;
+            border-radius: 50%;
+            padding: 8px;
+            width: 20px;
+        }
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+        line-height: 24px;
+        .copyright {
+            color: #fff;
+        }
+        .footer-nav {
+            li {
+                margin-right: 40px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            a {
+                color: #fff;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

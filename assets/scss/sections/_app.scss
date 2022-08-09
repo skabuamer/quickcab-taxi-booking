@@ -1,0 +1,45 @@
+#app-section {
+    position: relative;
+    margin-top: 450px;
+    .app-bg {
+        width: 1200px;
+        position: absolute;
+        @include gradient-y-reverse;
+        padding: 60px 0;
+        border-radius: 30px;
+        top: -217px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .app-content {
+        h2 {
+            color: #fff;
+            margin-bottom: 17px;
+        }
+
+        .app-subtitle {
+            margin-bottom: 30px;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .download-btn {
+            img {
+                margin-right: 27px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 4px #00000040;
+            }
+        }
+    }
+
+    .app-screenshot {
+        position: relative;
+        img {
+            position: absolute;
+            top: -200px;
+            right: 10px;
+        }
+    }
+}
