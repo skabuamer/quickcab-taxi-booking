@@ -299,6 +299,30 @@ header .sign-up-btn {
   right: 0;
   z-index: 1;
 }
+#app-section .app-bg::before {
+  position: absolute;
+  content: "";
+  width: 63%;
+  height: 63%;
+  background: url(../img/app/app-img.png) no-repeat;
+  z-index: -1;
+  top: 23%;
+  left: 390px;
+}
+#app-section .app-bg::after {
+  position: absolute;
+  content: "";
+  width: 225px;
+  height: 50%;
+  background: url(../img/app/tyre-stroke.png) no-repeat;
+  z-index: -1;
+  right: 170px;
+  top: 55%;
+}
+#app-section .app-bg .row {
+  max-width: 100%;
+  margin: 0 auto;
+}
 #app-section .app-content h2 {
   color: #fff;
   margin-bottom: 17px;
