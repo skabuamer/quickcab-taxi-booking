@@ -284,6 +284,122 @@ header .sign-up-btn {
   border: 0px;
 }
 
+#process-section {
+  padding: 60px 0;
+  position: relative;
+}
+#process-section::after {
+  content: "3 quick steps";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 200px;
+  font-weight: 700;
+  color: #c4c4c4;
+  z-index: -1;
+  text-align: center;
+  line-height: 158px;
+  opacity: 9%;
+}
+#process-section .section-heading {
+  margin-bottom: 97px;
+}
+#process-section .single-process {
+  text-align: center;
+  transition: all 0.4s ease;
+}
+#process-section .single-process:hover .single-process-icon i {
+  color: #fff;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #fff;
+}
+#process-section .single-process h3 {
+  color: #000;
+}
+#process-section .single-process p {
+  font-size: 18px;
+}
+#process-section .single-process-icon {
+  background: #f2f2f2;
+  width: fit-content;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+}
+#process-section .single-process-icon::after {
+  content: "";
+  width: 318px;
+  height: 100%;
+  top: 25px;
+  left: 60px;
+  position: absolute;
+  z-index: -1;
+  background-image: url(../img/line/line-1.png);
+  background-repeat: no-repeat;
+}
+#process-section .single-process-icon i {
+  border: 2px solid #ffffff;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
+  padding: 25px 30px;
+  border-radius: 15px;
+  font-size: 40px;
+  background-image: linear-gradient(to top, #f5286e, #fc6d43);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+#process-section .second-icon::after {
+  transform: rotate(180deg);
+  top: 0;
+  height: 80%;
+  left: 35px;
+}
+#process-section .last-icon::after {
+  background: none;
+}
+
+#service-section {
+  padding: 60px 0;
+  position: relative;
+}
+#service-section::after {
+  content: "Services";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 200px;
+  font-weight: 700;
+  color: #c4c4c4;
+  z-index: -1;
+  text-align: center;
+  line-height: 158px;
+  opacity: 9%;
+}
+#service-section .service-subtitle {
+  text-transform: uppercase;
+}
+#service-section .section-heading {
+  margin-bottom: 70px;
+}
+#service-section .single-service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#service-section .single-service img {
+  background-color: #f2f2f2;
+  border: 2px solid white;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+  margin-right: 35px;
+}
+#service-section .single-service-details h3 {
+  font-size: 24px;
+  color: #000;
+}
 #guide-section {
   padding: 60px 0;
   position: relative;
@@ -330,46 +446,6 @@ header .sign-up-btn {
   height: 20px;
 }
 
-#service-section {
-  padding: 60px 0;
-  position: relative;
-}
-#service-section::after {
-  content: "Services";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  font-size: 200px;
-  font-weight: 700;
-  color: #c4c4c4;
-  z-index: -1;
-  text-align: center;
-  line-height: 158px;
-  opacity: 9%;
-}
-#service-section .service-subtitle {
-  text-transform: uppercase;
-}
-#service-section .section-heading {
-  margin-bottom: 70px;
-}
-#service-section .single-service {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-#service-section .single-service img {
-  background-color: #f2f2f2;
-  border: 2px solid white;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
-  padding: 25px;
-  border-radius: 15px;
-  margin-right: 35px;
-}
-#service-section .single-service-details h3 {
-  font-size: 24px;
-  color: #000;
-}
 #app-section {
   position: relative;
   margin-top: 450px;
