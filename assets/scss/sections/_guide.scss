@@ -1,0 +1,41 @@
+#guide-section {
+    padding: 60px 0;
+    position: relative;
+    padding-top: 100px;
+
+    &::after {
+        content: "Book a cab";
+        @include secondary-heading;
+    }
+
+    .section-heading {
+        margin-top: 126px;
+        position: relative;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .steps {
+        margin-top: 90px;
+        margin-left: 50px;
+        li {
+            padding-left: 30px;
+            margin-bottom: 70px;
+            position: relative;
+            color: #000;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 4px;
+                left: 0;
+                background-image: linear-gradient(to top, #f5286e, #fc6d43);
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

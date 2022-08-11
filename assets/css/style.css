@@ -160,15 +160,15 @@ a:visited {
   transition: all 0.4s ease;
 }
 
-.section-heading h4 {
-  color: #ff3946;
-  font-weight: 600;
-  text-transform: uppercase;
+.section-heading span {
   margin-bottom: 12px;
+  line-height: 30px;
 }
 
 .section-heading h2 {
   text-transform: capitalize;
+  color: #000;
+  font-weight: 700;
 }
 
 /* -------------------------------HEADER STYLES------------------------------ */
@@ -282,6 +282,52 @@ header .sign-up-btn {
 }
 #booking-section .form-select {
   border: 0px;
+}
+
+#guide-section {
+  padding: 60px 0;
+  position: relative;
+  padding-top: 100px;
+}
+#guide-section::after {
+  content: "Book a cab";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 200px;
+  font-weight: 700;
+  color: #c4c4c4;
+  z-index: -1;
+  text-align: center;
+  line-height: 158px;
+  opacity: 9%;
+}
+#guide-section .section-heading {
+  margin-top: 126px;
+  position: relative;
+}
+#guide-section .section-heading h2 {
+  margin-bottom: 40px;
+}
+#guide-section .steps {
+  margin-top: 90px;
+  margin-left: 50px;
+}
+#guide-section .steps li {
+  padding-left: 30px;
+  margin-bottom: 70px;
+  position: relative;
+  color: #000;
+}
+#guide-section .steps li::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 0;
+  background-image: linear-gradient(to top, #f5286e, #fc6d43);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
 #app-section {

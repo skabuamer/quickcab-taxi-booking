@@ -73,12 +73,12 @@ a:visited {
 
 .section-heading {
 }
-.section-heading h4 {
-    color: #ff3946;
-    font-weight: 600;
-    text-transform: uppercase;
+.section-heading span {
     margin-bottom: 12px;
+    line-height: 30px;
 }
 .section-heading h2 {
     text-transform: capitalize;
+    color: #000;
+    font-weight: 700;
 }
