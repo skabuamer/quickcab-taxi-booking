@@ -535,7 +535,7 @@ footer .subscribe {
   display: flex;
   position: relative;
 }
-footer .subscribe svg {
+footer .subscribe i {
   position: absolute;
   color: #766e6e;
   left: 15px;
@@ -572,7 +572,7 @@ footer .subscribe .btn-custom:hover::after {
 footer .socials {
   margin-top: 30px;
 }
-footer .socials svg {
+footer .socials i {
   margin-right: 30px;
   border: 2px solid;
   border-radius: 50%;
