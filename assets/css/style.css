@@ -446,6 +446,144 @@ header .sign-up-btn {
   height: 20px;
 }
 
+#experience-section {
+  position: relative;
+  padding: 60px 0;
+  /*-------------------BOTTOM ROW STYLE STARTS HERE----------------*/
+}
+#experience-section::after {
+  content: "Experience";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 200px;
+  font-weight: 700;
+  color: #c4c4c4;
+  z-index: -1;
+  text-align: center;
+  line-height: 158px;
+  opacity: 9%;
+}
+#experience-section .section-heading {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 111px;
+}
+#experience-section .single-experience {
+  text-align: center;
+  position: relative;
+}
+#experience-section .single-experience::before {
+  content: "";
+  position: absolute;
+  top: 113%;
+  left: 50%;
+  border-left: 3px solid;
+  border-image: linear-gradient(to right, #fc6d43 50%, #f5286e 50%) 1 100%;
+  height: 210px;
+  transform-origin: top;
+}
+#experience-section .single-experience::after {
+  content: " ";
+  border: 3px solid;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 250%;
+  left: 168px;
+  border-color: #fc6d43;
+}
+#experience-section .single-experience h3 {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+#experience-section .single-experience img {
+  background: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  border: 5px solid #fff;
+  border-radius: 20px;
+}
+#experience-section .left-stroke,
+#experience-section .right-stroke {
+  margin-top: 60px;
+}
+#experience-section .left-stroke::before,
+#experience-section .right-stroke::before {
+  height: 212px;
+}
+#experience-section .left-stroke::after,
+#experience-section .right-stroke::after {
+  top: 209%;
+}
+#experience-section .left-stroke::before {
+  transform: rotate(315deg);
+}
+#experience-section .left-stroke::after {
+  left: 91%;
+}
+#experience-section .right-stroke::before {
+  transform: rotate(45deg);
+}
+#experience-section .right-stroke::after {
+  left: 9px;
+}
+#experience-section .experience-car {
+  margin: 145px 0 195px;
+  position: relative;
+}
+#experience-section .experience-car::before {
+  content: "";
+  position: absolute;
+  top: 115px;
+  left: 150px;
+  width: 100%;
+  height: 100%;
+  background: url(../img/experience/experience-bg.png) no-repeat;
+  z-index: -1;
+}
+#experience-section .experience-car::after {
+  content: "";
+  position: absolute;
+  top: 230px;
+  left: 120px;
+  width: 100%;
+  height: 100%;
+  background: url("../img/experience/experience-bg.png") no-repeat;
+  z-index: -1;
+}
+#experience-section .bottom-row .single-experience {
+  margin-top: 55px;
+}
+#experience-section .bottom-row .single-experience::before {
+  top: -20px;
+  transform: rotate(180deg);
+}
+#experience-section .bottom-row .single-experience::after {
+  top: -252px;
+}
+#experience-section .bottom-row .single-experience h3 {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+#experience-section .bottom-row .left-stroke,
+#experience-section .bottom-row .right-stroke {
+  margin-top: 0px;
+}
+#experience-section .bottom-row .left-stroke::after,
+#experience-section .bottom-row .right-stroke::after {
+  top: -190px;
+}
+#experience-section .bottom-row .left-stroke::before {
+  transform: rotate(225deg);
+}
+#experience-section .bottom-row .right-stroke::before {
+  transform: rotate(135deg);
+}
+
 #app-section {
   position: relative;
   margin-top: 450px;

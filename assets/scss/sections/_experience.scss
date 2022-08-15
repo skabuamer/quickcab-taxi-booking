@@ -1,0 +1,159 @@
+#experience-section {
+    position: relative;
+    padding: 60px 0;
+
+    &::after {
+        content: "Experience";
+        @include secondary-heading;
+    }
+
+    .section-heading {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 111px;
+    }
+
+    .single-experience {
+        text-align: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 113%;
+            left: 50%;
+            border-left: 3px solid;
+            border-image: linear-gradient(to right, $color-2 50%, $main-color 50%) 1 100%;
+            height: 210px;
+            transform-origin: top;
+        }
+        &::after {
+            content: " ";
+            border: 3px solid;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            top: 250%;
+            left: 168px;
+            border-color: $color-2;
+        }
+
+        h3 {
+            color: #000;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            background: #f2f2f2;
+            padding: 20px;
+            box-shadow: 0 5px 30px #00000033;
+            border: 5px solid #fff;
+            border-radius: 20px;
+        }
+    }
+
+    .left-stroke,
+    .right-stroke {
+        margin-top: 60px;
+
+        &::before {
+            height: 212px;
+        }
+
+        &::after {
+            top: 209%;
+        }
+    }
+
+    .left-stroke {
+        &::before {
+            transform: rotate(315deg);
+        }
+
+        &::after {
+            left: 91%;
+        }
+    }
+
+    .right-stroke {
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            left: 9px;
+        }
+    }
+
+    .experience-car {
+        margin: 145px 0 195px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 115px;
+            left: 150px;
+            width: 100%;
+            height: 100%;
+            background: url(../img/experience/experience-bg.png) no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 230px;
+            left: 120px;
+            width: 100%;
+            height: 100%;
+            background: url("../img/experience/experience-bg.png") no-repeat;
+            z-index: -1;
+        }
+    }
+
+    /*-------------------BOTTOM ROW STYLE STARTS HERE----------------*/
+
+    .bottom-row {
+        .single-experience {
+            margin-top: 55px;
+
+            &::before {
+                top: -20px;
+                transform: rotate(180deg);
+            }
+
+            &::after {
+                top: -252px;
+            }
+
+            h3 {
+                margin-bottom: 0;
+                margin-top: 30px;
+            }
+        }
+        .left-stroke,
+        .right-stroke {
+            margin-top: 0px;
+
+            &::after {
+                top: -190px;
+            }
+        }
+
+        .left-stroke {
+            &::before {
+                transform: rotate(225deg);
+            }
+        }
+
+        .right-stroke {
+            &::before {
+                transform: rotate(135deg);
+            }
+        }
+    }
+}
