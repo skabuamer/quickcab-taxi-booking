@@ -1,0 +1,99 @@
+#choose-section {
+    padding: 60px 0;
+    position: relative;
+
+    &::after {
+        content: "Choose Car";
+        @include secondary-heading;
+    }
+
+    .section-heading {
+        margin-bottom: 85px;
+    }
+
+    .single-city {
+        box-shadow: 0px 5px 50px #0000001a;
+        border-radius: 20px;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .single-city-img {
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    h4 {
+        color: #000;
+        text-transform: capitalize;
+    }
+
+    .search-city {
+        position: relative;
+        margin: 90px auto;
+        width: 50%;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        i {
+            position: absolute;
+            color: #766e6e;
+            left: 15px;
+            font-size: 25px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        input {
+            width: 60%;
+            font-size: 16px;
+            font-weight: 400;
+            border: 0;
+            border-radius: 10px;
+            padding: 15px 10px;
+            margin-left: 50px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .btn-custom {
+            width: 30%;
+            height: 60px;
+            padding: 0px 20px;
+            border: 0;
+            border-radius: 10px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+            &:hover {
+                &::after {
+                    border-radius: 10px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+    }
+
+    .nav-tabs .nav-link {
+        border: none;
+        border-bottom: 2px solid transparent;
+        text-transform: capitalize;
+        color: $color-3;
+
+        &:hover {
+            border-bottom: 2px solid $color-2;
+            color: $color-2;
+        }
+
+        &.active {
+            border-bottom: 2px solid $color-2;
+            color: $color-2;
+        }
+    }
+}

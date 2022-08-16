@@ -400,6 +400,100 @@ header .sign-up-btn {
   font-size: 24px;
   color: #000;
 }
+#choose-section {
+  padding: 60px 0;
+  position: relative;
+}
+#choose-section::after {
+  content: "Choose Car";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 200px;
+  font-weight: 700;
+  color: #c4c4c4;
+  z-index: -1;
+  text-align: center;
+  line-height: 158px;
+  opacity: 9%;
+}
+#choose-section .section-heading {
+  margin-bottom: 85px;
+}
+#choose-section .single-city {
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px 20px;
+}
+#choose-section .single-city-img {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#choose-section .single-city-img img {
+  max-width: 100%;
+}
+#choose-section h4 {
+  color: #000;
+  text-transform: capitalize;
+}
+#choose-section .search-city {
+  position: relative;
+  margin: 90px auto;
+  width: 50%;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+#choose-section .search-city i {
+  position: absolute;
+  color: #766e6e;
+  left: 15px;
+  font-size: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#choose-section .search-city input {
+  width: 60%;
+  font-size: 16px;
+  font-weight: 400;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-left: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#choose-section .search-city .btn-custom {
+  width: 30%;
+  height: 60px;
+  padding: 0px 20px;
+  border: 0;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#choose-section .search-city .btn-custom:hover::after {
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#choose-section .nav-tabs .nav-link {
+  border: none;
+  border-bottom: 2px solid transparent;
+  text-transform: capitalize;
+  color: #adadad;
+}
+#choose-section .nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #fc6d43;
+  color: #fc6d43;
+}
+#choose-section .nav-tabs .nav-link.active {
+  border-bottom: 2px solid #fc6d43;
+  color: #fc6d43;
+}
+
 #guide-section {
   padding: 60px 0;
   position: relative;
