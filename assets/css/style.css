@@ -272,13 +272,19 @@ header .sign-up-btn {
 #booking-section {
   padding: 30px 0;
 }
-#booking-section .select-proccess {
+#booking-section .select-process {
   box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
 }
-#booking-section .select-proccess svg {
+#booking-section .select-process i {
   color: #000;
+}
+#booking-section input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
 }
 #booking-section .form-select {
   border: 0px;

@@ -7,3 +7,7 @@ let slider = tns({
     autoplayButtonOutput: false,
     gutter: 52,
 });
+
+$(function () {
+    $(".datepicker").datepicker();
+});

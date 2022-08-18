@@ -7,6 +7,9 @@
         <title>QuickCab</title>
         <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
 
+        <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+         -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
 
@@ -129,26 +132,14 @@
 
                                     <div class="col-xl-3 d-flex align-items-center">
                                         <i class="fa-regular fa-calendar-day"></i>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected disabled>Pick-up date</option>
-                                            <option value="1">5</option>
-                                            <option value="2">10</option>
-                                            <option value="3">15</option>
-                                            <option value="4">20</option>
-                                            <option value="5">25</option>
-                                        </select>
+                                        <input type="text" class="datepicker" size="30" placeholder="Pick-up date" />
+                                        <i class="fa-regular fa-angle-down"></i>
                                     </div>
 
                                     <div class="col-xl-3 d-flex align-items-center">
                                         <i class="fa-regular fa-calendar-day"></i>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected disabled>Return date</option>
-                                            <option value="1">1</option>
-                                            <option value="2">5</option>
-                                            <option value="3">10</option>
-                                            <option value="4">15</option>
-                                            <option value="5">20</option>
-                                        </select>
+                                        <input type="text" class="datepicker" size="30" placeholder="Return date" />
+                                        <i class="fa-regular fa-angle-down"></i>
                                     </div>
 
                                     <div class="col-xl-3 d-flex align-items-center">
@@ -778,6 +769,9 @@
 
         <!-- jquery JS -->
         <script src="assets/vendor/js/jquery.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
         <!-- BOOTSTRAP JS  -->
         <script src="assets/vendor/js/bootstrap.min.js"></script>
