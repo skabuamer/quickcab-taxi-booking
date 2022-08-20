@@ -36,8 +36,12 @@
             height: 24px;
             border-radius: 50%;
             top: 250%;
-            left: 168px;
+            left: 198px;
             border-color: $color-2;
+
+            @include xl {
+                left: 168px;
+            }
         }
 
         h3 {
@@ -74,7 +78,11 @@
         }
 
         &::after {
-            left: 91%;
+            left: 85%;
+
+            @include xl {
+                left: 91%;
+            }
         }
     }
 
@@ -84,7 +92,11 @@
         }
 
         &::after {
-            left: 9px;
+            left: 40px;
+
+            @include xl {
+                left: 10px;
+            }
         }
     }
 
@@ -128,6 +140,11 @@
 
             &::after {
                 top: -252px;
+                left: 197px;
+
+                @include xl {
+                    left: 168px;
+                }
             }
 
             h3 {
@@ -141,6 +158,11 @@
 
             &::after {
                 top: -190px;
+                left: 355px;
+
+                @include xl {
+                    left: 325px;
+                }
             }
         }
 
@@ -153,6 +175,14 @@
         .right-stroke {
             &::before {
                 transform: rotate(135deg);
+            }
+
+            &::after {
+                left: 40px;
+
+                @include xl {
+                    left: 10px;
+                }
             }
         }
     }

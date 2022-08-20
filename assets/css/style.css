@@ -592,8 +592,13 @@ header .sign-up-btn {
   height: 24px;
   border-radius: 50%;
   top: 250%;
-  left: 168px;
+  left: 198px;
   border-color: #fc6d43;
+}
+@media screen and (max-width: 1399px) {
+  #experience-section .single-experience::after {
+    left: 168px;
+  }
 }
 #experience-section .single-experience h3 {
   color: #000;
@@ -623,13 +628,23 @@ header .sign-up-btn {
   transform: rotate(315deg);
 }
 #experience-section .left-stroke::after {
-  left: 91%;
+  left: 85%;
+}
+@media screen and (max-width: 1399px) {
+  #experience-section .left-stroke::after {
+    left: 91%;
+  }
 }
 #experience-section .right-stroke::before {
   transform: rotate(45deg);
 }
 #experience-section .right-stroke::after {
-  left: 9px;
+  left: 40px;
+}
+@media screen and (max-width: 1399px) {
+  #experience-section .right-stroke::after {
+    left: 10px;
+  }
 }
 #experience-section .experience-car {
   margin: 145px 0 195px;
@@ -664,6 +679,12 @@ header .sign-up-btn {
 }
 #experience-section .bottom-row .single-experience::after {
   top: -252px;
+  left: 197px;
+}
+@media screen and (max-width: 1399px) {
+  #experience-section .bottom-row .single-experience::after {
+    left: 168px;
+  }
 }
 #experience-section .bottom-row .single-experience h3 {
   margin-bottom: 0;
@@ -676,12 +697,27 @@ header .sign-up-btn {
 #experience-section .bottom-row .left-stroke::after,
 #experience-section .bottom-row .right-stroke::after {
   top: -190px;
+  left: 355px;
+}
+@media screen and (max-width: 1399px) {
+  #experience-section .bottom-row .left-stroke::after,
+#experience-section .bottom-row .right-stroke::after {
+    left: 325px;
+  }
 }
 #experience-section .bottom-row .left-stroke::before {
   transform: rotate(225deg);
 }
 #experience-section .bottom-row .right-stroke::before {
   transform: rotate(135deg);
+}
+#experience-section .bottom-row .right-stroke::after {
+  left: 40px;
+}
+@media screen and (max-width: 1399px) {
+  #experience-section .bottom-row .right-stroke::after {
+    left: 10px;
+  }
 }
 
 #app-section {
