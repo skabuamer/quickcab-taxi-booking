@@ -40,6 +40,7 @@
         width: 50%;
         box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
+        display: flex;
         i {
             position: absolute;
             color: #766e6e;
@@ -50,7 +51,7 @@
         }
 
         input {
-            width: 60%;
+            width: 70%;
             font-size: 16px;
             font-weight: 400;
             border: 0;
