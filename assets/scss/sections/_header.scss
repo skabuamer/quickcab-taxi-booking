@@ -2,9 +2,7 @@
 header {
     border-bottom: 2px solid #dcd8d8;
 
-    .container-fluid {
-        padding: 20px 50px;
-    }
+    padding: 20px 50px;
 
     .nav-item {
         margin-right: 70px;
@@ -52,5 +50,21 @@ header {
         font-weight: 600;
         padding: 0px 40px;
         line-height: 50px;
+    }
+}
+
+@include xxs {
+    header {
+        padding: 15px 0;
+
+        .btn-custom {
+            padding: 0px 15px;
+            height: 40px;
+            line-height: 45px;
+
+            i {
+                font-size: 20px;
+            }
+        }
     }
 }

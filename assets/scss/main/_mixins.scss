@@ -25,4 +25,8 @@
     text-align: center;
     line-height: 158px;
     opacity: 9%;
+
+    @include xxs {
+        font-size: 50px;
+    }
 }

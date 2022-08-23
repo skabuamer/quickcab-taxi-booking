@@ -50,9 +50,34 @@
         position: relative;
         .car-img {
             position: absolute;
-            z-index: 2;
+            z-index: 1;
             top: -180px;
             left: -110px;
+        }
+    }
+}
+
+@include xxs {
+    #hero-section {
+        padding: 45px 0;
+
+        .hero-content {
+            h1 {
+                font-size: 45px;
+                line-height: 55px;
+                margin-bottom: 20px;
+            }
+            p {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+
+        .hero-slider {
+            margin-top: 60px;
+        }
+        .single-img {
+            width: 80%;
         }
     }
 }

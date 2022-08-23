@@ -38,3 +38,23 @@
         }
     }
 }
+@include xxs {
+    #service-section {
+        padding: 30px 0;
+        .service-img {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .single-service {
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                margin-right: 0px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

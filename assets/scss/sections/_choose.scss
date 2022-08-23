@@ -98,3 +98,24 @@
         }
     }
 }
+
+@include xxs {
+    #choose-section {
+        padding: 30px 0;
+
+        .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .nav-tabs {
+            .nav-link {
+                padding: 10px;
+            }
+        }
+
+        .search-city {
+            margin: 35px auto;
+            width: 100%;
+        }
+    }
+}

@@ -79,3 +79,25 @@
         }
     }
 }
+@include xxs {
+    #process-section {
+        .section-heading {
+            margin-bottom: 40px;
+        }
+
+        .single-process {
+            margin-bottom: 35px;
+        }
+        .single-process-icon {
+            margin-bottom: 20px;
+
+            &::after {
+                display: none;
+            }
+
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+}

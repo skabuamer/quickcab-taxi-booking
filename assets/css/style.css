@@ -164,18 +164,26 @@ a:visited {
   margin-bottom: 12px;
   line-height: 30px;
 }
+.section-heading span include {
+  font-size: 16px;
+}
 
 .section-heading h2 {
   text-transform: capitalize;
   color: #000;
   font-weight: 700;
 }
+@media screen and (max-width: 479px) {
+  .section-heading h2 {
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
 
 /* -------------------------------HEADER STYLES------------------------------ */
 header {
   border-bottom: 2px solid #dcd8d8;
-}
-header .container-fluid {
   padding: 20px 50px;
 }
 header .nav-item {
@@ -222,6 +230,19 @@ header .sign-up-btn {
   line-height: 50px;
 }
 
+@media screen and (max-width: 479px) {
+  header {
+    padding: 15px 0;
+  }
+  header .btn-custom {
+    padding: 0px 15px;
+    height: 40px;
+    line-height: 45px;
+  }
+  header .btn-custom i {
+    font-size: 20px;
+  }
+}
 /*------------------HERO SECTION STYLES-----------------*/
 #hero-section {
   padding: 142px 0;
@@ -264,11 +285,31 @@ header .sign-up-btn {
 }
 #hero-section .car-container .car-img {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: -180px;
   left: -110px;
 }
 
+@media screen and (max-width: 479px) {
+  #hero-section {
+    padding: 45px 0;
+  }
+  #hero-section .hero-content h1 {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 20px;
+  }
+  #hero-section .hero-content p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #hero-section .hero-slider {
+    margin-top: 60px;
+  }
+  #hero-section .single-img {
+    width: 80%;
+  }
+}
 #booking-section {
   padding: 30px 0;
 }
@@ -290,6 +331,22 @@ header .sign-up-btn {
   border: 0px;
 }
 
+@media screen and (max-width: 479px) {
+  #booking-section input {
+    width: 80%;
+  }
+  #booking-section i {
+    font-size: 16px;
+  }
+  #booking-section .btn-custom {
+    margin: 0 auto;
+  }
+  #booking-section .destination,
+#booking-section .pickup-date,
+#booking-section .return-date {
+    margin-bottom: 15px;
+  }
+}
 #process-section {
   padding: 60px 0;
   position: relative;
@@ -306,6 +363,11 @@ header .sign-up-btn {
   text-align: center;
   line-height: 158px;
   opacity: 9%;
+}
+@media screen and (max-width: 479px) {
+  #process-section::after {
+    font-size: 50px;
+  }
 }
 #process-section .section-heading {
   margin-bottom: 97px;
@@ -366,6 +428,23 @@ header .sign-up-btn {
   background: none;
 }
 
+@media screen and (max-width: 479px) {
+  #process-section .section-heading {
+    margin-bottom: 40px;
+  }
+  #process-section .single-process {
+    margin-bottom: 35px;
+  }
+  #process-section .single-process-icon {
+    margin-bottom: 20px;
+  }
+  #process-section .single-process-icon::after {
+    display: none;
+  }
+  #process-section .single-process-icon i {
+    font-size: 30px;
+  }
+}
 #service-section {
   padding: 60px 0;
   position: relative;
@@ -382,6 +461,11 @@ header .sign-up-btn {
   text-align: center;
   line-height: 158px;
   opacity: 9%;
+}
+@media screen and (max-width: 479px) {
+  #service-section::after {
+    font-size: 50px;
+  }
 }
 #service-section .service-subtitle {
   text-transform: uppercase;
@@ -406,6 +490,22 @@ header .sign-up-btn {
   font-size: 24px;
   color: #000;
 }
+@media screen and (max-width: 479px) {
+  #service-section {
+    padding: 30px 0;
+  }
+  #service-section .service-img img {
+    max-width: 100%;
+  }
+  #service-section .single-service {
+    flex-direction: column;
+    text-align: center;
+  }
+  #service-section .single-service img {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+}
 #choose-section {
   padding: 60px 0;
   position: relative;
@@ -422,6 +522,11 @@ header .sign-up-btn {
   text-align: center;
   line-height: 158px;
   opacity: 9%;
+}
+@media screen and (max-width: 479px) {
+  #choose-section::after {
+    font-size: 50px;
+  }
 }
 #choose-section .section-heading {
   margin-bottom: 85px;
@@ -501,6 +606,21 @@ header .sign-up-btn {
   color: #fc6d43;
 }
 
+@media screen and (max-width: 479px) {
+  #choose-section {
+    padding: 30px 0;
+  }
+  #choose-section .section-heading {
+    margin-bottom: 30px;
+  }
+  #choose-section .nav-tabs .nav-link {
+    padding: 10px;
+  }
+  #choose-section .search-city {
+    margin: 35px auto;
+    width: 100%;
+  }
+}
 #guide-section {
   padding: 60px 0;
   position: relative;
@@ -518,6 +638,11 @@ header .sign-up-btn {
   text-align: center;
   line-height: 158px;
   opacity: 9%;
+}
+@media screen and (max-width: 479px) {
+  #guide-section::after {
+    font-size: 50px;
+  }
 }
 #guide-section .section-heading {
   margin-top: 126px;
@@ -564,6 +689,11 @@ header .sign-up-btn {
   text-align: center;
   line-height: 158px;
   opacity: 9%;
+}
+@media screen and (max-width: 479px) {
+  #experience-section::after {
+    font-size: 50px;
+  }
 }
 #experience-section .section-heading {
   width: 50%;

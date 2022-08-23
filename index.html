@@ -7,9 +7,9 @@
         <title>QuickCab</title>
         <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
 
-        <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
-         -->
+        <!-- JQUERY UI CSS -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
 
@@ -119,28 +119,34 @@
                         <div class="col-xl-10">
                             <div class="select-process">
                                 <div class="row align-items-center">
-                                    <div class="col-xl-3 d-flex align-items-center">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option disabled selected>Choose a Location</option>
-                                            <option value="1">Dhaka</option>
-                                            <option value="2">Khulna</option>
-                                            <option value="3">Bangladesh</option>
-                                            <option value="3">Tokyo</option>
-                                            <option value="3">Turkey</option>
-                                        </select>
+                                    <div class="col-xl-3">
+                                        <div class="destination d-flex align-items-center">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option disabled selected>Choose a Location</option>
+                                                <option value="1">Dhaka</option>
+                                                <option value="2">Khulna</option>
+                                                <option value="3">Bangladesh</option>
+                                                <option value="3">Tokyo</option>
+                                                <option value="3">Turkey</option>
+                                            </select>
+                                        </div>
                                     </div>
 
-                                    <div class="col-xl-3 d-flex align-items-center">
-                                        <i class="fa-regular fa-calendar-day"></i>
-                                        <input type="text" class="datepicker" size="30" placeholder="Pick-up date" />
-                                        <i class="fa-regular fa-angle-down"></i>
+                                    <div class="col-xl-3">
+                                        <div class="pickup-date d-flex align-items-center">
+                                            <i class="fa-regular fa-calendar-day"></i>
+                                            <input type="text" class="datepicker" size="30" placeholder="Pick-up date" />
+                                            <i class="fa-regular fa-angle-down"></i>
+                                        </div>
                                     </div>
 
-                                    <div class="col-xl-3 d-flex align-items-center">
-                                        <i class="fa-regular fa-calendar-day"></i>
-                                        <input type="text" class="datepicker" size="30" placeholder="Return date" />
-                                        <i class="fa-regular fa-angle-down"></i>
+                                    <div class="col-xl-3">
+                                        <div class="return-date d-flex align-items-center">
+                                            <i class="fa-regular fa-calendar-day"></i>
+                                            <input type="text" class="datepicker" size="30" placeholder="Return date" />
+                                            <i class="fa-regular fa-angle-down"></i>
+                                        </div>
                                     </div>
 
                                     <div class="col-xl-3 d-flex align-items-center">
