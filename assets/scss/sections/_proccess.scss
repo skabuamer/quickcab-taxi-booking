@@ -75,7 +75,7 @@
     }
     .last-icon {
         &::after {
-            background: none;
+            display: none;
         }
     }
 }

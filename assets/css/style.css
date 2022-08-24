@@ -364,6 +364,11 @@ header .sign-up-btn {
   line-height: 158px;
   opacity: 9%;
 }
+@media screen and (max-width: 1199px) {
+  #process-section::after {
+    font-size: 100px;
+  }
+}
 @media screen and (max-width: 479px) {
   #process-section::after {
     font-size: 50px;
@@ -425,7 +430,7 @@ header .sign-up-btn {
   left: 35px;
 }
 #process-section .last-icon::after {
-  background: none;
+  display: none;
 }
 
 @media screen and (max-width: 479px) {
@@ -461,6 +466,11 @@ header .sign-up-btn {
   text-align: center;
   line-height: 158px;
   opacity: 9%;
+}
+@media screen and (max-width: 1199px) {
+  #service-section::after {
+    font-size: 100px;
+  }
 }
 @media screen and (max-width: 479px) {
   #service-section::after {
@@ -522,6 +532,11 @@ header .sign-up-btn {
   text-align: center;
   line-height: 158px;
   opacity: 9%;
+}
+@media screen and (max-width: 1199px) {
+  #choose-section::after {
+    font-size: 100px;
+  }
 }
 @media screen and (max-width: 479px) {
   #choose-section::after {
@@ -639,6 +654,11 @@ header .sign-up-btn {
   line-height: 158px;
   opacity: 9%;
 }
+@media screen and (max-width: 1199px) {
+  #guide-section::after {
+    font-size: 100px;
+  }
+}
 @media screen and (max-width: 479px) {
   #guide-section::after {
     font-size: 50px;
@@ -689,6 +709,11 @@ header .sign-up-btn {
   text-align: center;
   line-height: 158px;
   opacity: 9%;
+}
+@media screen and (max-width: 1199px) {
+  #experience-section::after {
+    font-size: 100px;
+  }
 }
 @media screen and (max-width: 479px) {
   #experience-section::after {
