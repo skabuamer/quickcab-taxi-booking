@@ -72,12 +72,15 @@ a:visited {
 }
 
 .section-heading {
+    @include md {
+        text-align: center;
+    }
 }
 .section-heading span {
     margin-bottom: 12px;
     line-height: 30px;
 
-    include {
+    @include xxs {
         font-size: 16px;
     }
 }
@@ -89,6 +92,5 @@ a:visited {
     @include xxs {
         font-size: 35px;
         line-height: 50px;
-        text-align: center;
     }
 }

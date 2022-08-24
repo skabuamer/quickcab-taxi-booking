@@ -21,24 +21,29 @@
         border: 0px;
     }
 }
-@include xxs {
+@include md {
     #booking-section {
         input {
-            width: 80%;
+            width: 84%;
         }
-
         i {
             font-size: 16px;
         }
-
         .btn-custom {
             margin: 0 auto;
         }
-
         .destination,
         .pickup-date,
         .return-date {
             margin-bottom: 15px;
+        }
+    }
+}
+
+@include xxs {
+    #booking-section {
+        input {
+            width: 80%;
         }
     }
 }

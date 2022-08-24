@@ -13,7 +13,9 @@
     .section-heading {
         margin-bottom: 70px;
     }
-
+    .service-img {
+        justify-content: flex-end;
+    }
     .single-service {
         display: flex;
         align-items: center;
@@ -38,14 +40,23 @@
         }
     }
 }
+@include md {
+    #service-section {
+        .section-heading {
+            margin-bottom: 45px;
+        }
+        .service-img {
+            justify-content: center;
+            img {
+                max-width: 100%;
+                width: 70%;
+            }
+        }
+    }
+}
 @include xxs {
     #service-section {
         padding: 30px 0;
-        .service-img {
-            img {
-                max-width: 100%;
-            }
-        }
 
         .single-service {
             flex-direction: column;

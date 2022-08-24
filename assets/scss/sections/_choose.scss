@@ -99,6 +99,14 @@
     }
 }
 
+@include md {
+    #choose-section {
+        .search-city {
+            margin: 70px auto;
+            width: 80%;
+        }
+    }
+}
 @include xxs {
     #choose-section {
         padding: 30px 0;

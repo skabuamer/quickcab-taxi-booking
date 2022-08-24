@@ -4,7 +4,6 @@
     padding: 142px 0;
     position: relative;
     .hero-content {
-        // width: 50%;
         z-index: 2;
         position: relative;
         h1 {
@@ -66,6 +65,25 @@
         .car-container {
             .car-img {
                 top: -150px;
+            }
+        }
+    }
+}
+
+@include md {
+    #hero-section {
+        .row {
+            justify-content: center;
+        }
+        .hero-slider {
+            margin-top: 60px;
+        }
+        .tns-outer::before {
+            width: 10%;
+        }
+        .car-container {
+            .car-img {
+                top: -190px;
             }
         }
     }

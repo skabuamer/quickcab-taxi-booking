@@ -30,6 +30,10 @@
         font-size: 150px;
     }
 
+    @include md {
+        font-size: 130px;
+    }
+
     @include xxs {
         font-size: 50px;
     }

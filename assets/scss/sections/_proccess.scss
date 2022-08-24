@@ -79,6 +79,13 @@
         }
     }
 }
+@include md {
+    #process-section {
+        .single-process-icon::after {
+            display: none;
+        }
+    }
+}
 @include xxs {
     #process-section {
         .section-heading {

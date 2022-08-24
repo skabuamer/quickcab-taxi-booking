@@ -160,12 +160,20 @@ a:visited {
   transition: all 0.4s ease;
 }
 
+@media screen and (max-width: 991px) {
+  .section-heading {
+    text-align: center;
+  }
+}
+
 .section-heading span {
   margin-bottom: 12px;
   line-height: 30px;
 }
-.section-heading span include {
-  font-size: 16px;
+@media screen and (max-width: 479px) {
+  .section-heading span {
+    font-size: 16px;
+  }
 }
 
 .section-heading h2 {
@@ -177,7 +185,6 @@ a:visited {
   .section-heading h2 {
     font-size: 35px;
     line-height: 50px;
-    text-align: center;
   }
 }
 
@@ -230,6 +237,16 @@ header .sign-up-btn {
   line-height: 50px;
 }
 
+@media screen and (max-width: 991px) {
+  header .btn-custom {
+    padding: 0px 20px;
+    height: 50px;
+    line-height: 55px;
+  }
+  header .btn-custom i {
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 479px) {
   header {
     padding: 15px 0;
@@ -298,6 +315,20 @@ header .sign-up-btn {
     top: -150px;
   }
 }
+@media screen and (max-width: 991px) {
+  #hero-section .row {
+    justify-content: center;
+  }
+  #hero-section .hero-slider {
+    margin-top: 60px;
+  }
+  #hero-section .tns-outer::before {
+    width: 10%;
+  }
+  #hero-section .car-container .car-img {
+    top: -190px;
+  }
+}
 @media screen and (max-width: 479px) {
   #hero-section {
     padding: 45px 0;
@@ -339,9 +370,9 @@ header .sign-up-btn {
   border: 0px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 991px) {
   #booking-section input {
-    width: 80%;
+    width: 84%;
   }
   #booking-section i {
     font-size: 16px;
@@ -353,6 +384,11 @@ header .sign-up-btn {
 #booking-section .pickup-date,
 #booking-section .return-date {
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #booking-section input {
+    width: 80%;
   }
 }
 #process-section {
@@ -375,6 +411,11 @@ header .sign-up-btn {
 @media screen and (max-width: 1199px) {
   #process-section::after {
     font-size: 150px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #process-section::after {
+    font-size: 130px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -441,6 +482,11 @@ header .sign-up-btn {
   display: none;
 }
 
+@media screen and (max-width: 991px) {
+  #process-section .single-process-icon::after {
+    display: none;
+  }
+}
 @media screen and (max-width: 479px) {
   #process-section .section-heading {
     margin-bottom: 40px;
@@ -480,6 +526,11 @@ header .sign-up-btn {
     font-size: 150px;
   }
 }
+@media screen and (max-width: 991px) {
+  #service-section::after {
+    font-size: 130px;
+  }
+}
 @media screen and (max-width: 479px) {
   #service-section::after {
     font-size: 50px;
@@ -490,6 +541,9 @@ header .sign-up-btn {
 }
 #service-section .section-heading {
   margin-bottom: 70px;
+}
+#service-section .service-img {
+  justify-content: flex-end;
 }
 #service-section .single-service {
   display: flex;
@@ -508,12 +562,21 @@ header .sign-up-btn {
   font-size: 24px;
   color: #000;
 }
-@media screen and (max-width: 479px) {
-  #service-section {
-    padding: 30px 0;
+@media screen and (max-width: 991px) {
+  #service-section .section-heading {
+    margin-bottom: 45px;
+  }
+  #service-section .service-img {
+    justify-content: center;
   }
   #service-section .service-img img {
     max-width: 100%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 479px) {
+  #service-section {
+    padding: 30px 0;
   }
   #service-section .single-service {
     flex-direction: column;
@@ -544,6 +607,11 @@ header .sign-up-btn {
 @media screen and (max-width: 1199px) {
   #choose-section::after {
     font-size: 150px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #choose-section::after {
+    font-size: 130px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -629,6 +697,12 @@ header .sign-up-btn {
   color: #fc6d43;
 }
 
+@media screen and (max-width: 991px) {
+  #choose-section .search-city {
+    margin: 70px auto;
+    width: 80%;
+  }
+}
 @media screen and (max-width: 479px) {
   #choose-section {
     padding: 30px 0;
@@ -667,6 +741,11 @@ header .sign-up-btn {
     font-size: 150px;
   }
 }
+@media screen and (max-width: 991px) {
+  #guide-section::after {
+    font-size: 130px;
+  }
+}
 @media screen and (max-width: 479px) {
   #guide-section::after {
     font-size: 50px;
@@ -700,6 +779,18 @@ header .sign-up-btn {
   height: 20px;
 }
 
+@media screen and (max-width: 991px) {
+  #guide-section .section-heading {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  #guide-section .section-heading img {
+    width: 80%;
+  }
+  #guide-section .steps {
+    margin-left: 20px;
+  }
+}
 #experience-section {
   position: relative;
   padding: 60px 0;
@@ -721,6 +812,11 @@ header .sign-up-btn {
 @media screen and (max-width: 1199px) {
   #experience-section::after {
     font-size: 150px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #experience-section::after {
+    font-size: 130px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -765,10 +861,6 @@ header .sign-up-btn {
 #experience-section .right-stroke {
   margin-top: 60px;
 }
-#experience-section .left-stroke::after,
-#experience-section .right-stroke::after {
-  top: 209%;
-}
 #experience-section .left-stroke::before {
   transform: rotate(315deg);
 }
@@ -808,6 +900,29 @@ header .sign-up-btn {
   }
   #experience-section .experience-car {
     background-position: 25px 105px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #experience-section .section-heading {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #experience-section .single-experience {
+    margin-bottom: 30px;
+  }
+  #experience-section .single-experience::before {
+    display: none;
+  }
+  #experience-section .left-stroke,
+#experience-section .right-stroke {
+    margin-top: 0px;
+  }
+  #experience-section .experience-car {
+    margin: -50px 0 0;
+  }
+  #experience-section .bottom-row .single-experience {
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 }
 #app-section {

@@ -39,3 +39,18 @@
         }
     }
 }
+
+@include md {
+    #guide-section {
+        .section-heading {
+            margin-top: 0px;
+            margin-bottom: 50px;
+            img {
+                width: 80%;
+            }
+        }
+        .steps {
+            margin-left: 20px;
+        }
+    }
+}
