@@ -23,26 +23,30 @@
             position: absolute;
             top: 113%;
             left: 50%;
-            border-left: 3px solid;
-            border-image: linear-gradient(to right, $color-2 50%, $main-color 50%) 1 100%;
-            height: 210px;
+            background: url(../img/experience/stroke.png) no-repeat;
+            width: 25px;
+            height: 241px;
             transform-origin: top;
-        }
-        &::after {
-            content: " ";
-            border: 3px solid;
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            top: 250%;
-            left: 198px;
-            border-color: $color-2;
+            transform: translate(-50%, 0);
 
-            @include xl {
-                left: 168px;
-            }
+            // border-left: 3px solid;
+            // border-image: linear-gradient(to right, $color-2 50%, $main-color 50%) 1 100%;
         }
+        // &::after {
+        //     content: " ";
+        //     // border: 3px solid;
+        //     position: absolute;
+        //     width: 24px;
+        //     height: 24px;
+        //     border-radius: 50%;
+        //     top: 250%;
+        //     left: 198px;
+        //     border-color: $color-2;
+
+        //     @include xl {
+        //         left: 168px;
+        //     }
+        // }
 
         h3 {
             color: #000;
@@ -64,7 +68,7 @@
         margin-top: 60px;
 
         &::before {
-            height: 212px;
+            // height: 212px;
         }
 
         &::after {
@@ -77,13 +81,13 @@
             transform: rotate(315deg);
         }
 
-        &::after {
-            left: 85%;
+        // &::after {
+        //     left: 85%;
 
-            @include xl {
-                left: 91%;
-            }
-        }
+        //     @include xl {
+        //         left: 91%;
+        //     }
+        // }
     }
 
     .right-stroke {
@@ -91,40 +95,19 @@
             transform: rotate(45deg);
         }
 
-        &::after {
-            left: 40px;
+        // &::after {
+        //     left: 40px;
 
-            @include xl {
-                left: 10px;
-            }
-        }
+        //     @include xl {
+        //         left: 10px;
+        //     }
+        // }
     }
 
     .experience-car {
         margin: 145px 0 195px;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 115px;
-            left: 150px;
-            width: 100%;
-            height: 100%;
-            background: url(../img/experience/experience-bg.png) no-repeat;
-            z-index: -1;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 230px;
-            left: 120px;
-            width: 100%;
-            height: 100%;
-            background: url("../img/experience/experience-bg.png") no-repeat;
-            z-index: -1;
-        }
+        background: url(../img/experience/experience-bg.png) no-repeat;
+        background-position: 120px 105px;
     }
 
     /*-------------------BOTTOM ROW STYLE STARTS HERE----------------*/
@@ -135,17 +118,17 @@
 
             &::before {
                 top: -20px;
-                transform: rotate(180deg);
+                transform: translate(-50%, 0) rotate(180deg);
             }
 
-            &::after {
-                top: -252px;
-                left: 197px;
+            // &::after {
+            //     top: -252px;
+            //     left: 197px;
 
-                @include xl {
-                    left: 168px;
-                }
-            }
+            //     @include xl {
+            //         left: 168px;
+            //     }
+            // }
 
             h3 {
                 margin-bottom: 0;
@@ -156,14 +139,14 @@
         .right-stroke {
             margin-top: 0px;
 
-            &::after {
-                top: -190px;
-                left: 355px;
+            // &::after {
+            //     top: -190px;
+            //     left: 355px;
 
-                @include xl {
-                    left: 325px;
-                }
-            }
+            //     @include xl {
+            //         left: 325px;
+            //     }
+            // }
         }
 
         .left-stroke {
@@ -177,13 +160,25 @@
                 transform: rotate(135deg);
             }
 
-            &::after {
-                left: 40px;
+            // &::after {
+            //     left: 40px;
 
-                @include xl {
-                    left: 10px;
-                }
-            }
+            //     @include xl {
+            //         left: 10px;
+            //     }
+            // }
+        }
+    }
+}
+
+@include lg {
+    #experience-section {
+        .section-heading {
+            width: 70%;
+        }
+
+        .experience-car {
+            background-position: 25px 105px;
         }
     }
 }

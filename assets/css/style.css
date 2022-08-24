@@ -277,6 +277,9 @@ header .sign-up-btn {
   background: white;
   z-index: 1;
 }
+#hero-section .tns-inner {
+  width: 100%;
+}
 #hero-section .tns-ovh {
   overflow: visible;
 }
@@ -290,6 +293,11 @@ header .sign-up-btn {
   left: -110px;
 }
 
+@media screen and (max-width: 1199px) {
+  #hero-section .car-container .car-img {
+    top: -150px;
+  }
+}
 @media screen and (max-width: 479px) {
   #hero-section {
     padding: 45px 0;
@@ -366,7 +374,7 @@ header .sign-up-btn {
 }
 @media screen and (max-width: 1199px) {
   #process-section::after {
-    font-size: 100px;
+    font-size: 150px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -469,7 +477,7 @@ header .sign-up-btn {
 }
 @media screen and (max-width: 1199px) {
   #service-section::after {
-    font-size: 100px;
+    font-size: 150px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -535,7 +543,7 @@ header .sign-up-btn {
 }
 @media screen and (max-width: 1199px) {
   #choose-section::after {
-    font-size: 100px;
+    font-size: 150px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -656,7 +664,7 @@ header .sign-up-btn {
 }
 @media screen and (max-width: 1199px) {
   #guide-section::after {
-    font-size: 100px;
+    font-size: 150px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -712,7 +720,7 @@ header .sign-up-btn {
 }
 @media screen and (max-width: 1199px) {
   #experience-section::after {
-    font-size: 100px;
+    font-size: 150px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -735,26 +743,11 @@ header .sign-up-btn {
   position: absolute;
   top: 113%;
   left: 50%;
-  border-left: 3px solid;
-  border-image: linear-gradient(to right, #fc6d43 50%, #f5286e 50%) 1 100%;
-  height: 210px;
+  background: url(../img/experience/stroke.png) no-repeat;
+  width: 25px;
+  height: 241px;
   transform-origin: top;
-}
-#experience-section .single-experience::after {
-  content: " ";
-  border: 3px solid;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  top: 250%;
-  left: 198px;
-  border-color: #fc6d43;
-}
-@media screen and (max-width: 1399px) {
-  #experience-section .single-experience::after {
-    left: 168px;
-  }
+  transform: translate(-50%, 0);
 }
 #experience-section .single-experience h3 {
   color: #000;
@@ -772,10 +765,6 @@ header .sign-up-btn {
 #experience-section .right-stroke {
   margin-top: 60px;
 }
-#experience-section .left-stroke::before,
-#experience-section .right-stroke::before {
-  height: 212px;
-}
 #experience-section .left-stroke::after,
 #experience-section .right-stroke::after {
   top: 209%;
@@ -783,64 +772,20 @@ header .sign-up-btn {
 #experience-section .left-stroke::before {
   transform: rotate(315deg);
 }
-#experience-section .left-stroke::after {
-  left: 85%;
-}
-@media screen and (max-width: 1399px) {
-  #experience-section .left-stroke::after {
-    left: 91%;
-  }
-}
 #experience-section .right-stroke::before {
   transform: rotate(45deg);
 }
-#experience-section .right-stroke::after {
-  left: 40px;
-}
-@media screen and (max-width: 1399px) {
-  #experience-section .right-stroke::after {
-    left: 10px;
-  }
-}
 #experience-section .experience-car {
   margin: 145px 0 195px;
-  position: relative;
-}
-#experience-section .experience-car::before {
-  content: "";
-  position: absolute;
-  top: 115px;
-  left: 150px;
-  width: 100%;
-  height: 100%;
   background: url(../img/experience/experience-bg.png) no-repeat;
-  z-index: -1;
-}
-#experience-section .experience-car::after {
-  content: "";
-  position: absolute;
-  top: 230px;
-  left: 120px;
-  width: 100%;
-  height: 100%;
-  background: url("../img/experience/experience-bg.png") no-repeat;
-  z-index: -1;
+  background-position: 120px 105px;
 }
 #experience-section .bottom-row .single-experience {
   margin-top: 55px;
 }
 #experience-section .bottom-row .single-experience::before {
   top: -20px;
-  transform: rotate(180deg);
-}
-#experience-section .bottom-row .single-experience::after {
-  top: -252px;
-  left: 197px;
-}
-@media screen and (max-width: 1399px) {
-  #experience-section .bottom-row .single-experience::after {
-    left: 168px;
-  }
+  transform: translate(-50%, 0) rotate(180deg);
 }
 #experience-section .bottom-row .single-experience h3 {
   margin-bottom: 0;
@@ -850,32 +795,21 @@ header .sign-up-btn {
 #experience-section .bottom-row .right-stroke {
   margin-top: 0px;
 }
-#experience-section .bottom-row .left-stroke::after,
-#experience-section .bottom-row .right-stroke::after {
-  top: -190px;
-  left: 355px;
-}
-@media screen and (max-width: 1399px) {
-  #experience-section .bottom-row .left-stroke::after,
-#experience-section .bottom-row .right-stroke::after {
-    left: 325px;
-  }
-}
 #experience-section .bottom-row .left-stroke::before {
   transform: rotate(225deg);
 }
 #experience-section .bottom-row .right-stroke::before {
   transform: rotate(135deg);
 }
-#experience-section .bottom-row .right-stroke::after {
-  left: 40px;
-}
-@media screen and (max-width: 1399px) {
-  #experience-section .bottom-row .right-stroke::after {
-    left: 10px;
+
+@media screen and (max-width: 1199px) {
+  #experience-section .section-heading {
+    width: 70%;
+  }
+  #experience-section .experience-car {
+    background-position: 25px 105px;
   }
 }
-
 #app-section {
   position: relative;
   margin-top: 450px;
@@ -934,10 +868,21 @@ header .sign-up-btn {
 }
 #app-section .app-screenshot img {
   position: absolute;
-  top: -200px;
+  bottom: -275px;
   right: 10px;
 }
 
+@media screen and (max-width: 1199px) {
+  #app-section {
+    margin-top: 300px;
+  }
+  #app-section .app-bg {
+    width: 90%;
+  }
+  #app-section .app-bg::before {
+    left: 37%;
+  }
+}
 footer {
   background: #000;
   padding-top: 270px;
