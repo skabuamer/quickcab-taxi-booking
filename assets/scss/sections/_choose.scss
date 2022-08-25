@@ -107,6 +107,14 @@
         }
     }
 }
+@include sm {
+    #choose-section {
+        padding: 40px 0;
+        .section-heading {
+            margin-bottom: 45px;
+        }
+    }
+}
 @include xxs {
     #choose-section {
         padding: 30px 0;
@@ -114,7 +122,9 @@
         .section-heading {
             margin-bottom: 30px;
         }
-
+        .single-city {
+            margin-bottom: 30px;
+        }
         .nav-tabs {
             .nav-link {
                 padding: 10px;
@@ -124,6 +134,14 @@
         .search-city {
             margin: 35px auto;
             width: 100%;
+        }
+        .tab-pane {
+            .row {
+                justify-content: center;
+            }
+        }
+        .col-xxs-12 {
+            width: 90%;
         }
     }
 }

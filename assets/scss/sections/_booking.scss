@@ -40,10 +40,28 @@
     }
 }
 
+@include sm {
+    #booking-section {
+        input {
+            width: 78%;
+        }
+    }
+}
+
+@include xs {
+    #booking-section {
+        // input {
+        //     width: 78%;
+        // }
+    }
+}
 @include xxs {
     #booking-section {
         input {
             width: 80%;
+        }
+        .col-6 {
+            width: 100%;
         }
     }
 }

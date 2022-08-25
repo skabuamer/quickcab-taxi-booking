@@ -247,6 +247,16 @@ header .sign-up-btn {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 767px) {
+  header {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  header {
+    padding: 20px 15px;
+  }
+}
 @media screen and (max-width: 479px) {
   header {
     padding: 15px 0;
@@ -306,16 +316,24 @@ header .sign-up-btn {
 #hero-section .car-container .car-img {
   position: absolute;
   z-index: 1;
-  top: -180px;
+  top: -210px;
   left: -110px;
 }
 
+@media screen and (max-width: 1399px) {
+  #hero-section .car-container .car-img {
+    top: -180px;
+  }
+}
 @media screen and (max-width: 1199px) {
   #hero-section .car-container .car-img {
     top: -150px;
   }
 }
 @media screen and (max-width: 991px) {
+  #hero-section {
+    padding: 60px 0;
+  }
   #hero-section .row {
     justify-content: center;
   }
@@ -329,24 +347,54 @@ header .sign-up-btn {
     top: -190px;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   #hero-section {
     padding: 45px 0;
   }
   #hero-section .hero-content h1 {
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 50px;
+    line-height: 60px;
     margin-bottom: 20px;
   }
   #hero-section .hero-content p {
     width: 100%;
     margin-bottom: 25px;
   }
-  #hero-section .hero-slider {
-    margin-top: 60px;
+  #hero-section .tns-outer::before {
+    width: 5%;
   }
-  #hero-section .single-img {
-    width: 80%;
+  #hero-section .car-container .car-img {
+    left: -60px;
+    top: -175px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #hero-section .tns-outer::before {
+    display: none;
+  }
+  #hero-section .tns-inner {
+    width: 95%;
+  }
+  #hero-section #tns1 > .tns-item {
+    padding-right: 40px;
+  }
+  #hero-section .car-container .car-img {
+    left: -50px;
+    top: -155px;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 479px) {
+  #hero-section {
+    padding: 30px 0;
+  }
+  #hero-section .hero-content h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  #hero-section .car-container .car-img {
+    top: -95px;
+    left: -40px;
   }
 }
 #booking-section {
@@ -386,9 +434,17 @@ header .sign-up-btn {
     margin-bottom: 15px;
   }
 }
+@media screen and (max-width: 767px) {
+  #booking-section input {
+    width: 78%;
+  }
+}
 @media screen and (max-width: 479px) {
   #booking-section input {
     width: 80%;
+  }
+  #booking-section .col-6 {
+    width: 100%;
   }
 }
 #process-section {
@@ -487,7 +543,23 @@ header .sign-up-btn {
     display: none;
   }
 }
+@media screen and (max-width: 991px) {
+  #process-section .section-heading {
+    margin-bottom: 40px;
+  }
+  #process-section .single-process {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #process-section {
+    padding: 40px 0;
+  }
+}
 @media screen and (max-width: 479px) {
+  #process-section {
+    padding: 30px 0;
+  }
   #process-section .section-heading {
     margin-bottom: 40px;
   }
@@ -572,6 +644,11 @@ header .sign-up-btn {
   #service-section .service-img img {
     max-width: 100%;
     width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #service-section {
+    padding: 40px 0;
   }
 }
 @media screen and (max-width: 479px) {
@@ -703,11 +780,22 @@ header .sign-up-btn {
     width: 80%;
   }
 }
+@media screen and (max-width: 767px) {
+  #choose-section {
+    padding: 40px 0;
+  }
+  #choose-section .section-heading {
+    margin-bottom: 45px;
+  }
+}
 @media screen and (max-width: 479px) {
   #choose-section {
     padding: 30px 0;
   }
   #choose-section .section-heading {
+    margin-bottom: 30px;
+  }
+  #choose-section .single-city {
     margin-bottom: 30px;
   }
   #choose-section .nav-tabs .nav-link {
@@ -716,6 +804,12 @@ header .sign-up-btn {
   #choose-section .search-city {
     margin: 35px auto;
     width: 100%;
+  }
+  #choose-section .tab-pane .row {
+    justify-content: center;
+  }
+  #choose-section .col-xxs-12 {
+    width: 90%;
   }
 }
 #guide-section {
@@ -987,12 +1081,14 @@ header .sign-up-btn {
   right: 10px;
 }
 
+@media screen and (max-width: 1399px) {
+  #app-section .app-bg {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 1199px) {
   #app-section {
     margin-top: 300px;
-  }
-  #app-section .app-bg {
-    width: 90%;
   }
   #app-section .app-bg::before {
     left: 37%;

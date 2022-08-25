@@ -54,6 +54,11 @@
         }
     }
 }
+@include sm {
+    #service-section {
+        padding: 40px 0;
+    }
+}
 @include xxs {
     #service-section {
         padding: 30px 0;

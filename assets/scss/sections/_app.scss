@@ -71,11 +71,17 @@
     }
 }
 
+@include xl {
+    #app-section {
+        .app-bg {
+            width: 90%;
+        }
+    }
+}
 @include lg {
     #app-section {
         margin-top: 300px;
         .app-bg {
-            width: 90%;
             &::before {
                 left: 37%;
             }

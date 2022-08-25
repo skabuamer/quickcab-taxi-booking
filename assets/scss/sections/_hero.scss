@@ -20,7 +20,6 @@
 
     .hero-slider {
         margin-top: 130px;
-        // position: relative;
 
         img {
             width: 100%;
@@ -46,16 +45,23 @@
         overflow: visible;
     }
 
-    .single-img {
-    }
-
     .car-container {
         position: relative;
         .car-img {
             position: absolute;
             z-index: 1;
-            top: -180px;
+            top: -210px;
             left: -110px;
+        }
+    }
+}
+
+@include xl {
+    #hero-section {
+        .car-container {
+            .car-img {
+                top: -180px;
+            }
         }
     }
 }
@@ -72,6 +78,7 @@
 
 @include md {
     #hero-section {
+        padding: 60px 0;
         .row {
             justify-content: center;
         }
@@ -89,14 +96,14 @@
     }
 }
 
-@include xxs {
+@include sm {
     #hero-section {
         padding: 45px 0;
 
         .hero-content {
             h1 {
-                font-size: 45px;
-                line-height: 55px;
+                font-size: 50px;
+                line-height: 60px;
                 margin-bottom: 20px;
             }
             p {
@@ -105,11 +112,56 @@
             }
         }
 
-        .hero-slider {
-            margin-top: 60px;
+        .tns-outer::before {
+            width: 5%;
         }
-        .single-img {
-            width: 80%;
+        .car-container {
+            .car-img {
+                left: -60px;
+                top: -175px;
+            }
+        }
+    }
+}
+
+@include xs {
+    #hero-section {
+        .tns-outer::before {
+            display: none;
+        }
+        .tns-inner {
+            width: 95%;
+        }
+        #tns1 > .tns-item {
+            padding-right: 40px;
+        }
+
+        .car-container {
+            .car-img {
+                left: -50px;
+                top: -155px;
+                width: 95%;
+            }
+        }
+    }
+}
+
+@include xxs {
+    #hero-section {
+        padding: 30px 0;
+
+        .hero-content {
+            h1 {
+                font-size: 35px;
+                line-height: 45px;
+            }
+        }
+
+        .car-container {
+            .car-img {
+                top: -95px;
+                left: -40px;
+            }
         }
     }
 }
