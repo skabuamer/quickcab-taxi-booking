@@ -103,3 +103,49 @@ footer {
         }
     }
 }
+
+@include md {
+    footer {
+        .footer-top {
+            margin-bottom: 50px;
+        }
+        .footer-bottom {
+            .footer-nav {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@include xxs {
+    footer {
+        .footer-top {
+            .col-xxs-12 {
+                width: 100%;
+            }
+        }
+        .footer-widget {
+            text-align: center;
+            .subscribe {
+                justify-content: center;
+                flex-wrap: wrap;
+
+                i {
+                    top: 12%;
+                    transform: none;
+                }
+
+                input {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    border-radius: 10px;
+                }
+
+                .btn-custom {
+                    border-radius: 10px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

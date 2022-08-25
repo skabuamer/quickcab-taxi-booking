@@ -54,3 +54,43 @@
         }
     }
 }
+
+@include sm {
+    #guide-section {
+        padding: 40px 0;
+        .steps {
+            margin-top: 0px;
+        }
+    }
+}
+
+@include xs {
+    #guide-section {
+        .row {
+            justify-content: center;
+        }
+        .guide-mobile {
+            display: none;
+        }
+        .steps {
+            li {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@include xxs {
+    #guide-section {
+        padding: 30px 0;
+        .section-heading {
+            margin-bottom: 30px;
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+
+        .col-xxs-12 {
+            width: 100%;
+        }
+    }
+}

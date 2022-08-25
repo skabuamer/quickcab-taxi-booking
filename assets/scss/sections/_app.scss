@@ -94,3 +94,55 @@
         }
     }
 }
+
+@include sm {
+    #app-section {
+        .app-screenshot {
+            display: none;
+        }
+    }
+}
+
+@include xs {
+    #app-section {
+        .app-content {
+            .download-btn {
+                display: flex;
+
+                img {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include xxs {
+    #app-section {
+        .app-bg {
+            padding: 25px 0;
+            top: -260px;
+
+            &::after {
+                width: 145px;
+            }
+        }
+        .app-content {
+            h2 {
+                font-size: 35px;
+                line-height: 50px;
+            }
+            span.app-subtitle {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .download-btn {
+                flex-wrap: wrap;
+                justify-content: center;
+                img {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

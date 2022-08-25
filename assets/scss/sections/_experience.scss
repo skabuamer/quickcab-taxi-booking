@@ -144,3 +144,21 @@
         }
     }
 }
+@include sm {
+    #experience-section {
+        padding: 40px 0;
+    }
+}
+
+@include xxs {
+    #experience-section {
+        padding: 30px 0;
+
+        .single-experience {
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}

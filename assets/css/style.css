@@ -181,6 +181,12 @@ a:visited {
   color: #000;
   font-weight: 700;
 }
+@media screen and (max-width: 575px) {
+  .section-heading h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
 @media screen and (max-width: 479px) {
   .section-heading h2 {
     font-size: 35px;
@@ -474,6 +480,16 @@ header .sign-up-btn {
     font-size: 130px;
   }
 }
+@media screen and (max-width: 767px) {
+  #process-section::after {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #process-section::after {
+    font-size: 85px;
+  }
+}
 @media screen and (max-width: 479px) {
   #process-section::after {
     font-size: 50px;
@@ -603,6 +619,16 @@ header .sign-up-btn {
     font-size: 130px;
   }
 }
+@media screen and (max-width: 767px) {
+  #service-section::after {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #service-section::after {
+    font-size: 85px;
+  }
+}
 @media screen and (max-width: 479px) {
   #service-section::after {
     font-size: 50px;
@@ -691,6 +717,16 @@ header .sign-up-btn {
     font-size: 130px;
   }
 }
+@media screen and (max-width: 767px) {
+  #choose-section::after {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #choose-section::after {
+    font-size: 85px;
+  }
+}
 @media screen and (max-width: 479px) {
   #choose-section::after {
     font-size: 50px;
@@ -704,6 +740,7 @@ header .sign-up-btn {
   border-radius: 20px;
   text-align: center;
   padding: 40px 20px;
+  margin-bottom: 24px;
 }
 #choose-section .single-city-img {
   min-height: 150px;
@@ -808,7 +845,7 @@ header .sign-up-btn {
   #choose-section .tab-pane .row {
     justify-content: center;
   }
-  #choose-section .col-xxs-12 {
+  #choose-section .col-xxs-11 {
     width: 90%;
   }
 }
@@ -838,6 +875,16 @@ header .sign-up-btn {
 @media screen and (max-width: 991px) {
   #guide-section::after {
     font-size: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #guide-section::after {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #guide-section::after {
+    font-size: 85px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -885,6 +932,39 @@ header .sign-up-btn {
     margin-left: 20px;
   }
 }
+@media screen and (max-width: 767px) {
+  #guide-section {
+    padding: 40px 0;
+  }
+  #guide-section .steps {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #guide-section .row {
+    justify-content: center;
+  }
+  #guide-section .guide-mobile {
+    display: none;
+  }
+  #guide-section .steps li {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #guide-section {
+    padding: 30px 0;
+  }
+  #guide-section .section-heading {
+    margin-bottom: 30px;
+  }
+  #guide-section .section-heading h2 {
+    margin-bottom: 20px;
+  }
+  #guide-section .col-xxs-12 {
+    width: 100%;
+  }
+}
 #experience-section {
   position: relative;
   padding: 60px 0;
@@ -911,6 +991,16 @@ header .sign-up-btn {
 @media screen and (max-width: 991px) {
   #experience-section::after {
     font-size: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #experience-section::after {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #experience-section::after {
+    font-size: 85px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -1019,6 +1109,20 @@ header .sign-up-btn {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  #experience-section {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  #experience-section {
+    padding: 30px 0;
+  }
+  #experience-section .single-experience h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 #app-section {
   position: relative;
   margin-top: 450px;
@@ -1092,6 +1196,43 @@ header .sign-up-btn {
   }
   #app-section .app-bg::before {
     left: 37%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #app-section .app-screenshot {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  #app-section .app-content .download-btn {
+    display: flex;
+  }
+  #app-section .app-content .download-btn img {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #app-section .app-bg {
+    padding: 25px 0;
+    top: -260px;
+  }
+  #app-section .app-bg::after {
+    width: 145px;
+  }
+  #app-section .app-content h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  #app-section .app-content span.app-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  #app-section .app-content .download-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #app-section .app-content .download-btn img {
+    margin-bottom: 20px;
   }
 }
 footer {
@@ -1183,4 +1324,38 @@ footer .footer-bottom .footer-nav li:last-child {
 footer .footer-bottom .footer-nav a {
   color: #fff;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 991px) {
+  footer .footer-top {
+    margin-bottom: 50px;
+  }
+  footer .footer-bottom .footer-nav {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  footer .footer-top .col-xxs-12 {
+    width: 100%;
+  }
+  footer .footer-widget {
+    text-align: center;
+  }
+  footer .footer-widget .subscribe {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .footer-widget .subscribe i {
+    top: 12%;
+    transform: none;
+  }
+  footer .footer-widget .subscribe input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  footer .footer-widget .subscribe .btn-custom {
+    border-radius: 10px;
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
