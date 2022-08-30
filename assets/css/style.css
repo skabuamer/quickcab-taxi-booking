@@ -280,6 +280,7 @@ header .sign-up-btn {
 #hero-section {
   padding: 142px 0;
   position: relative;
+  overflow: hidden;
 }
 #hero-section .hero-content {
   z-index: 2;
