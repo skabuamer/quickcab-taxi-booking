@@ -15,13 +15,13 @@
         text-align: center;
         transition: all 0.4s ease;
 
-        &:hover {
-            .single-process-icon i {
-                color: #fff;
-                -webkit-background-clip: unset;
-                -webkit-text-fill-color: #fff;
-            }
-        }
+        // &:hover {
+        //     .single-process-icon i {
+        //         color: #fff;
+        //         -webkit-background-clip: unset;
+        //         -webkit-text-fill-color: #fff;
+        //     }
+        // }
 
         h3 {
             color: #000;
@@ -66,6 +66,12 @@
         }
     }
     .second-icon {
+        i {
+            color: #fff;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: #fff;
+        }
+
         &::after {
             transform: rotate(180deg);
             top: 0;

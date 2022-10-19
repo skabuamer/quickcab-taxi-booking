@@ -1,7 +1,7 @@
 footer {
     background: #000;
     padding-top: 270px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     clip-path: polygon(0 125px, 100% 0, 100% 100%, 0% 100%);
     position: relative;
 
@@ -71,10 +71,16 @@ footer {
 
     .socials {
         margin-top: 30px;
-        i {
-            margin-right: 30px;
-            border: 2px solid;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        a {
+            background-image: linear-gradient(to right, $main-color, $color-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             border-radius: 50%;
+            border: 2px solid $white;
             height: 40px;
             width: 40px;
             text-align: center;
@@ -85,6 +91,12 @@ footer {
     .footer-bottom {
         font-size: 16px;
         line-height: 24px;
+        text-align: center;
+
+        .row {
+            row-gap: 20px;
+        }
+
         .copyright {
             color: #fff;
         }
