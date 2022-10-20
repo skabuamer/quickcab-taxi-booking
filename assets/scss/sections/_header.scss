@@ -9,8 +9,6 @@ header {
     }
 
     .nav-item {
-        // margin-right: 70px;
-
         &:last-child {
             margin-right: 0px;
         }
@@ -84,6 +82,16 @@ header {
             align-items: flex-start !important;
         }
 
+        .nav-item {
+            a {
+                &:hover {
+                    &::after {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
         .sign-up-btn {
             padding: 0 15px;
         }
@@ -112,11 +120,11 @@ header {
 
 @include xs {
     header {
-        padding: 20px 15px;
+        padding: 10px 15px;
     }
 
     .sticky {
-        padding: 20px 15px;
+        padding: 10px 15px;
     }
 }
 

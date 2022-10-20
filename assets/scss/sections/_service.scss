@@ -1,6 +1,8 @@
 #service-section {
     padding: 60px 0;
     position: relative;
+    overflow: hidden;
+
     &::after {
         content: "Services";
         @include secondary-heading;

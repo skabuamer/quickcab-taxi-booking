@@ -347,6 +347,9 @@ header .sign-up-btn {
     row-gap: 10px;
     align-items: flex-start !important;
   }
+  header .nav-item a:hover::after {
+    opacity: 0;
+  }
   header .sign-up-btn {
     padding: 0 15px;
   }
@@ -369,10 +372,10 @@ header .sign-up-btn {
 }
 @media screen and (max-width: 575px) {
   header {
-    padding: 20px 15px;
+    padding: 10px 15px;
   }
   .sticky {
-    padding: 20px 15px;
+    padding: 10px 15px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -722,6 +725,7 @@ header .sign-up-btn {
 #service-section {
   padding: 60px 0;
   position: relative;
+  overflow: hidden;
 }
 #service-section::after {
   content: "Services";
@@ -994,6 +998,7 @@ header .sign-up-btn {
   padding: 60px 0;
   position: relative;
   padding-top: 100px;
+  overflow: hidden;
 }
 #guide-section::after {
   content: "Book a cab";
@@ -1109,6 +1114,7 @@ header .sign-up-btn {
 #experience-section {
   position: relative;
   padding: 60px 0;
+  overflow: hidden;
   /*-------------------BOTTOM ROW STYLE STARTS HERE----------------*/
 }
 #experience-section::after {
@@ -1244,6 +1250,7 @@ header .sign-up-btn {
   }
   #experience-section .experience-car {
     margin: -50px 0 0;
+    background-position-x: -22px;
   }
   #experience-section .bottom-row .single-experience {
     margin-top: 30px;
@@ -1253,6 +1260,9 @@ header .sign-up-btn {
 @media screen and (max-width: 767px) {
   #experience-section {
     padding: 40px 0;
+  }
+  #experience-section .experience-car {
+    background: none;
   }
 }
 @media screen and (max-width: 479px) {

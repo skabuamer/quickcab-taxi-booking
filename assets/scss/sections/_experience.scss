@@ -1,6 +1,7 @@
 #experience-section {
     position: relative;
     padding: 60px 0;
+    overflow: hidden;
 
     &::after {
         content: "Experience";
@@ -135,6 +136,7 @@
         }
         .experience-car {
             margin: -50px 0 0;
+            background-position-x: -22px;
         }
         .bottom-row {
             .single-experience {
@@ -147,6 +149,10 @@
 @include sm {
     #experience-section {
         padding: 40px 0;
+
+        .experience-car {
+            background: none;
+        }
     }
 }
 
